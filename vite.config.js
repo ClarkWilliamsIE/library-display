@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
+// Vite config for building the project
 export default defineConfig({
   plugins: [react()],
-  base: '/library-display/',  // Adjust this to match your GitHub Pages repo name
+  base: '/library-display/',  // GitHub Pages base URL (adjust if needed)
   build: {
-    outDir: 'dist',  // The output directory for the build
+    outDir: 'dist',  // Output directory for the build
   },
 });
